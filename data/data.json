@@ -1,0 +1,124 @@
+{
+  "categories": {
+    "greek-tragedy": {
+      "title": "Грецька Трагедія",
+      "description": "Курс досліджує витоки, розвиток та спадщину афінської трагедії V століття до н.е. через аналіз творів трьох великих трагіків: Есхіла, Софокла та Евріпіда.",
+      "books": [
+        "Aeschylus Oresteia",
+        "Sophocles Oedipus Rex",
+        "Euripides Medea",
+        "Aristophanes The Frogs"
+      ]
+    },
+    "classical-philosophy": {
+      "title": "Класична Філософія",
+      "description": "Вступ до основ західної філософської думки, зосереджений на метафізиці, етиці та політичній теорії Платона та Арістотеля, а також на їхніх попередниках і послідовниках.",
+      "books": [
+        "Plato The Republic",
+        "Aristotle Nicomachean Ethics",
+        "Plato Apology",
+        "Heraclitus Fragments"
+      ]
+    },
+    "roman-literature": {
+      "title": "Римська література та думка",
+      "description": "Огляд золотого та срібного віків римської літератури, включаючи епічну поезію Вергілія, лірику Горація та філософію стоїків, таких як Сенека та Марк Аврелій.",
+      "books": [
+        "Virgil Aeneid",
+        "Ovid Metamorphoses",
+        "Marcus Aurelius Meditations",
+        "Lucretius De rerum natura"
+      ]
+    },
+    "renaissance-humanism": {
+      "title": "Ренесансний Гуманізм",
+      "description": "Курс присвячений відродженню класичних ідеалів в Італії та Північній Європі, досліджуючи твори Петрарки, Макіавеллі, Еразма, Монтеня та драматургію Шекспіра.",
+      "books": [
+        "Dante Alighieri The Divine Comedy",
+        "Niccolo Machiavelli The Prince",
+        "Shakespeare Hamlet",
+        "Montaigne The Complete Essays"
+      ]
+    },
+    "enlightenment": {
+      "title": "Доба Просвітництва",
+      "description": "Аналіз інтелектуальної революції XVIII століття, що підкреслювала розум, індивідуалізм та скептицизм. Розглядаються твори Вольтера, Дідро, Руссо та Канта.",
+      "books": [
+        "Voltaire Candide",
+        "Jean-Jacques Rousseau The Social Contract",
+        "Immanuel Kant Critique of Pure Reason",
+        "Adam Smith The Wealth of Nations"
+      ]
+    },
+    "english-romanticism": {
+      "title": "Англійський Романтизм",
+      "description": "Дослідження поезії та прози британських романтиків, їхньої зосередженості на природі, емоціях, уяві та індивідуальному досвіді. Включає Вордсворта, Кітса, Байрона та Шеллі.",
+      "books": [
+        "William Wordsworth Lyrical Ballads",
+        "John Keats Complete Poems",
+        "Mary Shelley Frankenstein",
+        "Lord Byron Don Juan"
+      ]
+    },
+    "19c-french-novel": {
+      "title": "Французький роман XIX ст.",
+      "description": "Курс охоплює ключові літературні рухи XIX століття у Франції — романтизм, реалізм та натуралізм — через романи Стендаля, Бальзака, Гюго, Флобера та Золя.",
+      "books": [
+        "Stendhal The Red and the Black",
+        "Victor Hugo Les Misérables",
+        "Gustave Flaubert Madame Bovary",
+        "Émile Zola Germinal"
+      ]
+    },
+    "victorian-novel": {
+      "title": "Вікторіанський Роман",
+      "description": "Аналіз великих романів вікторіанської Англії, що відображають соціальні, політичні та моральні проблеми епохи індустріалізації, через твори Діккенса, сестер Бронте та Джордж Еліот.",
+      "books": [
+        "Charles Dickens Great Expectations",
+        "George Eliot Middlemarch",
+        "Emily Brontë Wuthering Heights",
+        "Jane Austen Pride and Prejudice"
+      ]
+    },
+    "19c-russian-literature": {
+      "title": "Золотий вік російської літератури",
+      "description": "Глибоке занурення у психологічний реалізм та філософські пошуки російських класиків, включаючи аналіз великих романів Достоєвського і Толстого та драматургії Чехова.",
+      "books": [
+        "Dostoevsky Crime and Punishment",
+        "Leo Tolstoy War and Peace",
+        "Nikolai Gogol Dead Souls",
+        "Anton Chekhov The Cherry Orchard"
+      ]
+    },
+    "german-idealism": {
+      "title": "Німецький ідеалізм та його критики",
+      "description": "Дослідження вершин німецької філософської думки від Канта до Гегеля, а також подальшої радикальної критики метафізики у роботах Шопенгауера, Маркса та Ніцше.",
+      "books": [
+        "G.W.F. Hegel Phenomenology of Spirit",
+        "Arthur Schopenhauer The World as Will and Representation",
+        "Karl Marx Das Kapital",
+        "Friedrich Nietzsche Thus Spoke Zarathustra"
+      ]
+    },
+    "modernism": {
+      "title": "Літературний Модернізм",
+      "description": "Курс досліджує формальні експерименти та тематичні інновації модерністської літератури, що виникли як реакція на зміни XX століття. Аналізуються твори Джойса, Пруста, Вулф та Кафки.",
+      "books": [
+        "James Joyce Ulysses",
+        "Marcel Proust Swann's Way",
+        "Virginia Woolf Mrs Dalloway",
+        "Franz Kafka The Metamorphosis"
+      ]
+    },
+    "existentialism": {
+      "title": "Екзистенціалізм",
+      "description": "Вивчення філософії та літератури екзистенціалізму, що фокусується на темах свободи, відповідальності, абсурду та сенсу життя у творах Сартра, Камю, де Бовуар та їхніх попередників.",
+      "books": [
+        "Jean-Paul Sartre Nausea",
+        "Albert Camus The Stranger",
+        "Simone de Beauvoir The Second Sex",
+        "Fyodor Dostoevsky Notes from Underground"
+      ]
+    }
+  }
+}
