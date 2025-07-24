@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фундаментальний список для читання - Галерея</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-6" style="background-color: #111827;">
+
+    <div id="app-root" class="w-full max-w-7xl mx-auto">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-white mb-2">Фундаментальний список</h1>
+            <p class="text-lg text-gray-400">Візуальний гід по ключових епохах літератури та філософії.</p>
+        </header>
+        <div class="relative">
+            <div id="gallery-container" class="flex overflow-x-auto snap-x snap-mandatory space-x-6 py-4 no-scrollbar scroll-smooth"></div>
+            <button id="scroll-left" class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 transition-colors rounded-full p-2 text-white -ml-4 z-10 hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+            </button>
+            <button id="scroll-right" class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 transition-colors rounded-full p-2 text-white -mr-4 z-10 hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+            </button>
+        </div>
+    </div>
+    <div id="modal-root"></div>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
