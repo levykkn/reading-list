@@ -1,49 +1,62 @@
 export class GalleryUI {
-    constructor(rootSelector, modalRootSelector) {
-        this.root = document.querySelector(rootSelector);
-        this.modalRoot = document.querySelector(modalRootSelector);
-        this.galleryContainer = this.root.querySelector('#gallery-container');
-        this.scrollLeftBtn = this.root.querySelector('#scroll-left');
-        this.scrollRightBtn = this.root.querySelector('#scroll-right');
-    }
-    
-    render(categories) {
-        this.galleryContainer.innerHTML = Object.keys(categories).map(key => {
-            const category = categories[key];
-            const imagePlaceholders = category.covers.map((cover, index) => {
-                const imgUrl = cover.url || `https://placehold.co/300x450/27272a/f3f4f6?text=${encodeURIComponent(cover.query.split(' ')[0])}`;
-                return `<img src="${imgUrl}" alt="Обкладинка: ${cover.query}" class="w-full h-full object-cover">`;
-            }).join('');
-            return `<div class="category-item snap-start flex-shrink-0 w-64 md:w-72 lg:w-80 cursor-pointer" data-category-key="${key}">
-                        <div class="grid grid-cols-2 grid-rows-2 gap-1 rounded-lg overflow-hidden aspect-[2/3] bg-gray-800 pointer-events-none">${imagePlaceholders}</div>
-                        <h3 class="mt-3 text-lg font-medium text-center text-gray-200 pointer-events-none">${category.title}</h3>
-                     </div>`;
-        }).join('');
-        this.showScrollButtons();
+    constructor() {
+        this.container = document.getElementById('gallery-container');
+        this.tagsContainer = document.getElementById('tags-container');
+        this.searchInput = document.getElementById('search-input');
     }
 
-    setupEventListeners(categoryClickHandler) {
-        this.scrollLeftBtn.addEventListener('click', () => this.scroll(-1));
-        this.scrollRightBtn.addEventListener('click', () => this.scroll(1));
-        
-        this.galleryContainer.addEventListener('click', (e) => {
-            const categoryItem = e.target.closest('.category-item');
-            if (categoryItem) {
-                const key = categoryItem.dataset.categoryKey;
-                categoryClickHandler(key);
-            }
+    renderCourses(courses) {
+        if (!this.container) return;
+        this.container.className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12";
+
+        if (courses.length === 0) {
+            this.container.innerHTML = `<p class="col-span-full text-center text-gray-500">No courses found matching your criteria.</p>`;
+            return;
+        }
+
+        this.container.innerHTML = courses.map(course => `
+            <a href="/course.html?id=${course.id}" class="category-item group">
+                <div class="w-full bg-gray-200 rounded-lg overflow-hidden mb-4">
+                    <img src="${course.books[0].coverUrl}" alt="Cover for ${course.title}" 
+                         class="w-full h-full object-cover aspect-[3/4] transition-transform duration-300 ease-in-out group-hover:scale-105">
+                </div>
+                <h3 class="text-base font-bold text-gray-900 tracking-tight">${course.title}</h3>
+                <p class="text-sm text-gray-500">${course.tags.slice(0, 2).join(', ')}</p>
+            </a>
+        `).join('');
+    }
+
+    renderTags(tags, onTagClick) {
+        if (!this.tagsContainer) return;
+        this.tagsContainer.innerHTML = tags.sort().map(tag => `
+            <button class="tag-btn text-gray-600 bg-white border border-gray-300 text-sm font-medium px-3 py-1 rounded-full hover:border-gray-900 transition-colors" data-tag="${tag}">
+                ${tag}
+            </button>
+        `).join('');
+
+        this.tagsContainer.querySelectorAll('.tag-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.currentTarget.classList.toggle('active');
+                onTagClick();
+            });
         });
     }
 
-    scroll(direction) {
-        const firstItem = this.galleryContainer.querySelector('.category-item');
-        if (firstItem) {
-            const scrollAmount = (firstItem.offsetWidth + 24) * direction; 
-            this.galleryContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-        }
+    onSearch(callback) {
+        if (this.searchInput) this.searchInput.addEventListener('input', callback);
     }
     
-    showScrollButtons() { this.scrollLeftBtn.classList.remove('hidden'); this.scrollRightBtn.classList.remove('hidden'); }
-    
-    displayError(message) { this.galleryContainer.innerHTML = `<div class="text-center w-full text-yellow-400 bg-yellow-900/50 p-4 rounded-lg"><strong>Помилка:</strong> ${message}</div>`; }
+    getActiveTags() {
+        return Array.from(this.tagsContainer.querySelectorAll('.tag-btn.active')).map(btn => btn.dataset.tag);
+    }
+
+    getSearchQuery() {
+        return this.searchInput ? this.searchInput.value : '';
+    }
+
+    displayError(message) {
+        if (this.container) {
+            this.container.innerHTML = `<p class="col-span-full text-center text-red-500">${message}</p>`;
+        }
+    }
 }

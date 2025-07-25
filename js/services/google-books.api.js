@@ -10,30 +10,48 @@ export class GoogleBooksAPI {
 
         const cacheKey = `book_${query}`;
 
+        const cachedData = localStorage.getItem(cacheKey);
+        if (cachedData) {
+            return JSON.parse(cachedData);
+        }
         if (this.cache.has(query)) {
             return this.cache.get(query);
         }
 
-        const cachedData = localStorage.getItem(cacheKey);
-        if (cachedData) {
-            const parsedData = JSON.parse(cachedData);
-            this.cache.set(query, parsedData); 
-            return parsedData;
+        const preferredQuery = `${query} (inpublisher:"Penguin Publishing Group" OR inpublisher:"OUP Oxford")`;
+        let details = await this._executeFetch(preferredQuery);
+
+        if (!details) {
+            details = await this._executeFetch(query);
         }
         
-        const url = `${this.baseUrl}?q=${encodeURIComponent(query)}&maxResults=1&key=${this.apiKey}`;
+        if (details) {
+            localStorage.setItem(cacheKey, JSON.stringify(details));
+            this.cache.set(query, details);
+        }
+
+        return details || { query }; 
+    }
+
+    /**
+     * Helper method to execute the fetch request and process the result.
+     * @private
+     */
+    async _executeFetch(searchQuery) {
+        const url = `${this.baseUrl}?q=${encodeURIComponent(searchQuery)}&maxResults=1&key=${this.apiKey}`;
         try {
             const response = await fetch(url);
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             
             const data = await response.json();
-            if (!data.items || data.items.length === 0) return { query };
-            
+            if (!data.items || data.items.length === 0) {
+                return null; // Return null if no items are found.
+            }
+
             const book = data.items[0].volumeInfo;
             const isbn = book.industryIdentifiers?.find(id => id.type === 'ISBN_13' || id.type === 'ISBN_10');
             
-            const bookDetails = {
-                query: query,
+            return {
                 title: book.title,
                 author: book.authors ? book.authors.join(', ') : 'Невідомий автор',
                 coverUrl: book.imageLinks?.thumbnail || book.imageLinks?.smallThumbnail,
@@ -41,15 +59,9 @@ export class GoogleBooksAPI {
                 publishedDate: book.publishedDate ? book.publishedDate.substring(0, 4) : 'N/A',
                 description: book.description || 'Опис відсутній.'
             };
-
-            
-            localStorage.setItem(cacheKey, JSON.stringify(bookDetails));
-            this.cache.set(query, bookDetails);
-
-            return bookDetails;
         } catch (error) {
-            console.error(`API Error for "${query}":`, error);
-            return { query }; 
+            console.error(`API Error for "${searchQuery}":`, error);
+            return null;
         }
     }
 }

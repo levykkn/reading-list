@@ -1,124 +1,164 @@
 {
-  "categories": {
-    "greek-tragedy": {
-      "title": "Грецька Трагедія",
-      "description": "Курс досліджує витоки, розвиток та спадщину афінської трагедії V століття до н.е. через аналіз творів трьох великих трагіків: Есхіла, Софокла та Евріпіда.",
+  "categories": [
+    {
+      "id": "greek-tragedy",
+      "title": "Greek Tragedy",
+      "description": "This course explores the origins, development, and legacy of Athenian tragedy in the 5th century BCE through the analysis of works by the three great tragedians: Aeschylus, Sophocles, and Euripides.",
+      "tags": ["Ancient", "Philosophy", "Theatre"],
       "books": [
-        "Aeschylus Oresteia",
-        "Sophocles Oedipus Rex",
-        "Euripides Medea",
-        "Aristophanes The Frogs"
+        {
+          "id": "aeschylus-oresteia",
+          "title": "The Oresteia",
+          "author": "Aeschylus",
+          "coverUrl": "https://covers.openlibrary.org/b/id/8268481-L.jpg"
+        },
+        {
+          "id": "sophocles-oedipus",
+          "title": "Oedipus Rex",
+          "author": "Sophocles",
+          "coverUrl": "https://covers.openlibrary.org/b/id/10174158-L.jpg"
+        },
+        {
+          "id": "euripides-medea",
+          "title": "Medea",
+          "author": "Euripides",
+          "coverUrl": "https://covers.openlibrary.org/b/id/12840510-L.jpg"
+        },
+        {
+          "id": "aristophanes-frogs",
+          "title": "The Frogs",
+          "author": "Aristophanes",
+          "coverUrl": "https://covers.openlibrary.org/b/id/8289966-L.jpg"
+        }
       ]
     },
-    "classical-philosophy": {
-      "title": "Класична Філософія",
-      "description": "Вступ до основ західної філософської думки, зосереджений на метафізиці, етиці та політичній теорії Платона та Арістотеля, а також на їхніх попередниках і послідовниках.",
+    {
+      "id": "classical-philosophy",
+      "title": "Classical Philosophy",
+      "description": "An introduction to the foundations of Western philosophical thought, focusing on the metaphysics, ethics, and political theory of Plato and Aristotle, as well as their predecessors and followers.",
+      "tags": ["Ancient", "Philosophy", "Ethics"],
       "books": [
-        "Plato The Republic",
-        "Aristotle Nicomachean Ethics",
-        "Plato Apology",
-        "Heraclitus Fragments"
+        {
+          "id": "plato-republic",
+          "title": "The Republic",
+          "author": "Plato",
+          "coverUrl": "https://covers.openlibrary.org/b/id/8286109-L.jpg"
+        },
+        {
+          "id": "aristotle-ethics",
+          "title": "Nicomachean Ethics",
+          "author": "Aristotle",
+          "coverUrl": "https://covers.openlibrary.org/b/id/9242953-L.jpg"
+        },
+        {
+          "id": "plato-apology",
+          "title": "Apology",
+          "author": "Plato",
+          "coverUrl": "https://covers.openlibrary.org/b/id/7901898-L.jpg"
+        },
+        {
+          "id": "heraclitus-fragments",
+          "title": "Fragments",
+          "author": "Heraclitus",
+          "coverUrl": "https://covers.openlibrary.org/b/id/10478042-L.jpg"
+        }
       ]
     },
-    "roman-literature": {
-      "title": "Римська література та думка",
-      "description": "Огляд золотого та срібного віків римської літератури, включаючи епічну поезію Вергілія, лірику Горація та філософію стоїків, таких як Сенека та Марк Аврелій.",
+    {
+      "id": "renaissance-humanism",
+      "title": "Renaissance Humanism",
+      "description": "This course is dedicated to the revival of classical ideals in Italy and Northern Europe, exploring the works of Petrarch, Machiavelli, Erasmus, Montaigne, and the drama of Shakespeare.",
+      "tags": ["Renaissance", "Philosophy", "Art", "Politics"],
       "books": [
-        "Virgil Aeneid",
-        "Ovid Metamorphoses",
-        "Marcus Aurelius Meditations",
-        "Lucretius De rerum natura"
+        {
+          "id": "dante-divine-comedy",
+          "title": "The Divine Comedy",
+          "author": "Dante Alighieri",
+          "coverUrl": "https://covers.openlibrary.org/b/id/8314115-L.jpg"
+        },
+        {
+          "id": "machiavelli-prince",
+          "title": "The Prince",
+          "author": "Niccolò Machiavelli",
+          "coverUrl": "https://covers.openlibrary.org/b/id/10042772-L.jpg"
+        },
+        {
+          "id": "shakespeare-hamlet",
+          "title": "Hamlet",
+          "author": "William Shakespeare",
+          "coverUrl": "https://covers.openlibrary.org/b/id/8264149-L.jpg"
+        },
+        {
+          "id": "montaigne-essays",
+          "title": "The Complete Essays",
+          "author": "Michel de Montaigne",
+          "coverUrl": "https://covers.openlibrary.org/b/id/10037817-L.jpg"
+        }
       ]
     },
-    "renaissance-humanism": {
-      "title": "Ренесансний Гуманізм",
-      "description": "Курс присвячений відродженню класичних ідеалів в Італії та Північній Європі, досліджуючи твори Петрарки, Макіавеллі, Еразма, Монтеня та драматургію Шекспіра.",
+    {
+      "id": "19c-russian-lit",
+      "title": "19th Century Russian Literature",
+      "description": "A deep dive into the psychological realism and philosophical quests of the Russian classics, including an analysis of the great novels of Dostoevsky and Tolstoy and the drama of Chekhov.",
+      "tags": ["19th Century", "Novel", "Russia", "Realism"],
       "books": [
-        "Dante Alighieri The Divine Comedy",
-        "Niccolo Machiavelli The Prince",
-        "Shakespeare Hamlet",
-        "Montaigne The Complete Essays"
+        {
+          "id": "dostoevsky-crime-punishment",
+          "title": "Crime and Punishment",
+          "author": "Fyodor Dostoevsky",
+          "coverUrl": "https://covers.openlibrary.org/b/id/8391032-L.jpg"
+        },
+        {
+          "id": "tolstoy-war-peace",
+          "title": "War and Peace",
+          "author": "Leo Tolstoy",
+          "coverUrl": "https://covers.openlibrary.org/b/id/10492854-L.jpg"
+        },
+        {
+          "id": "gogol-dead-souls",
+          "title": "Dead Souls",
+          "author": "Nikolai Gogol",
+          "coverUrl": "https://covers.openlibrary.org/b/id/8290928-L.jpg"
+        },
+        {
+          "id": "chekhov-cherry-orchard",
+          "title": "The Cherry Orchard",
+          "author": "Anton Chekhov",
+          "coverUrl": "https://covers.openlibrary.org/b/id/8020845-L.jpg"
+        }
       ]
     },
-    "enlightenment": {
-      "title": "Доба Просвітництва",
-      "description": "Аналіз інтелектуальної революції XVIII століття, що підкреслювала розум, індивідуалізм та скептицизм. Розглядаються твори Вольтера, Дідро, Руссо та Канта.",
+    {
+      "id": "existentialism",
+      "title": "Existentialism",
+      "description": "A study of the philosophy and literature of existentialism, focusing on themes of freedom, responsibility, absurdity, and the meaning of life in the works of Sartre, Camus, de Beauvoir, and their predecessors.",
+      "tags": ["20th Century", "Philosophy", "France", "Existentialism"],
       "books": [
-        "Voltaire Candide",
-        "Jean-Jacques Rousseau The Social Contract",
-        "Immanuel Kant Critique of Pure Reason",
-        "Adam Smith The Wealth of Nations"
-      ]
-    },
-    "english-romanticism": {
-      "title": "Англійський Романтизм",
-      "description": "Дослідження поезії та прози британських романтиків, їхньої зосередженості на природі, емоціях, уяві та індивідуальному досвіді. Включає Вордсворта, Кітса, Байрона та Шеллі.",
-      "books": [
-        "William Wordsworth Lyrical Ballads",
-        "John Keats Complete Poems",
-        "Mary Shelley Frankenstein",
-        "Lord Byron Don Juan"
-      ]
-    },
-    "19c-french-novel": {
-      "title": "Французький роман XIX ст.",
-      "description": "Курс охоплює ключові літературні рухи XIX століття у Франції — романтизм, реалізм та натуралізм — через романи Стендаля, Бальзака, Гюго, Флобера та Золя.",
-      "books": [
-        "Stendhal The Red and the Black",
-        "Victor Hugo Les Misérables",
-        "Gustave Flaubert Madame Bovary",
-        "Émile Zola Germinal"
-      ]
-    },
-    "victorian-novel": {
-      "title": "Вікторіанський Роман",
-      "description": "Аналіз великих романів вікторіанської Англії, що відображають соціальні, політичні та моральні проблеми епохи індустріалізації, через твори Діккенса, сестер Бронте та Джордж Еліот.",
-      "books": [
-        "Charles Dickens Great Expectations",
-        "George Eliot Middlemarch",
-        "Emily Brontë Wuthering Heights",
-        "Jane Austen Pride and Prejudice"
-      ]
-    },
-    "19c-russian-literature": {
-      "title": "Золотий вік російської літератури",
-      "description": "Глибоке занурення у психологічний реалізм та філософські пошуки російських класиків, включаючи аналіз великих романів Достоєвського і Толстого та драматургії Чехова.",
-      "books": [
-        "Dostoevsky Crime and Punishment",
-        "Leo Tolstoy War and Peace",
-        "Nikolai Gogol Dead Souls",
-        "Anton Chekhov The Cherry Orchard"
-      ]
-    },
-    "german-idealism": {
-      "title": "Німецький ідеалізм та його критики",
-      "description": "Дослідження вершин німецької філософської думки від Канта до Гегеля, а також подальшої радикальної критики метафізики у роботах Шопенгауера, Маркса та Ніцше.",
-      "books": [
-        "G.W.F. Hegel Phenomenology of Spirit",
-        "Arthur Schopenhauer The World as Will and Representation",
-        "Karl Marx Das Kapital",
-        "Friedrich Nietzsche Thus Spoke Zarathustra"
-      ]
-    },
-    "modernism": {
-      "title": "Літературний Модернізм",
-      "description": "Курс досліджує формальні експерименти та тематичні інновації модерністської літератури, що виникли як реакція на зміни XX століття. Аналізуються твори Джойса, Пруста, Вулф та Кафки.",
-      "books": [
-        "James Joyce Ulysses",
-        "Marcel Proust Swann's Way",
-        "Virginia Woolf Mrs Dalloway",
-        "Franz Kafka The Metamorphosis"
-      ]
-    },
-    "existentialism": {
-      "title": "Екзистенціалізм",
-      "description": "Вивчення філософії та літератури екзистенціалізму, що фокусується на темах свободи, відповідальності, абсурду та сенсу життя у творах Сартра, Камю, де Бовуар та їхніх попередників.",
-      "books": [
-        "Jean-Paul Sartre Nausea",
-        "Albert Camus The Stranger",
-        "Simone de Beauvoir The Second Sex",
-        "Fyodor Dostoevsky Notes from Underground"
+        {
+          "id": "sartre-nausea",
+          "title": "Nausea",
+          "author": "Jean-Paul Sartre",
+          "coverUrl": "https://covers.openlibrary.org/b/id/8291884-L.jpg"
+        },
+        {
+          "id": "camus-stranger",
+          "title": "The Stranger",
+          "author": "Albert Camus",
+          "coverUrl": "https://covers.openlibrary.org/b/id/10041309-L.jpg"
+        },
+        {
+          "id": "debeauvoir-second-sex",
+          "title": "The Second Sex",
+          "author": "Simone de Beauvoir",
+          "coverUrl": "https://covers.openlibrary.org/b/id/10040716-L.jpg"
+        },
+        {
+          "id": "dostoevsky-notes-underground",
+          "title": "Notes from Underground",
+          "author": "Fyodor Dostoevsky",
+          "coverUrl": "https://covers.openlibrary.org/b/id/8287570-L.jpg"
+        }
       ]
     }
-  }
+  ]
 }

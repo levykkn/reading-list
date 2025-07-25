@@ -1,36 +1,58 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Деталі курсу</title>
+    <title>Loading Course...</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #f3f4f6; }
-        .loader { border: 4px solid #e5e7eb; border-top: 4px solid #3b82f6; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; margin: 5rem auto; }
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Basic styles for the loader */
+        .loader {
+            border: 4px solid #e5e7eb; border-top: 4px solid #111827;
+            border-radius: 50%; width: 40px; height: 40px;
+            animation: spin 1s linear infinite; margin: 3rem auto;
+        }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-50 text-gray-700">
 
-    <div id="app-container" class="container mx-auto p-4 md:p-8 max-w-5xl">
-        <header class="flex justify-between items-center mb-8">
-            <h1 id="course-title" class="text-3xl md:text-4xl font-bold text-gray-900">Завантаження...</h1>
-            <div class="flex items-center space-x-2">
-                <a href="index.html" class="text-blue-600 hover:text-blue-800">&larr; Повернутися до галереї</a>
-            </div>
+    <div id="app-container" class="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        
+        <header class="mb-12">
+            <a href="index.html" class="text-sm text-gray-500 hover:text-gray-900 transition-colors">&larr; All Courses</a>
+            <h1 id="course-title" class="mt-2 text-4xl sm:text-5xl font-bold tracking-tight text-gray-900"></h1>
         </header>
 
-        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
-            <p id="course-description" class="text-gray-600 leading-relaxed"></p>
-        </div>
-
-        <div id="book-list-container">
-            <div id="loader" class="loader"></div>
+        <main class="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-12">
+            
+            <div class="lg:col-span-1 mb-12 lg:mb-0">
+                <div class="sticky top-10">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">About this course</h2>
+                    <div id="course-description" class="prose prose-sm text-gray-600">
+                        </div>
+                </div>
             </div>
+
+            <div id="book-list-container" class="lg:col-span-2">
+                 <div class="loader-container"><div class="loader"></div></div>
+            </div>
+
+        </main>
+
+        <footer class="text-center mt-24 text-sm text-gray-400">
+            <p>&copy; 2025 Reading Lists</p>
+        </footer>
     </div>
 
     <script src="js/main.js" type="module"></script>

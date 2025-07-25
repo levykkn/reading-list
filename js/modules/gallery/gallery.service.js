@@ -1,28 +1,34 @@
 export class GalleryService {
-    constructor(api, dataService) {
-        this.api = api;
-        this.dataService = dataService;
-        this.categories = null;
+    constructor(apiService) {
+        this.api = apiService;
+        this.allCourses = [];
+        this.allTags = new Set();
     }
 
-    async getCategoriesWithCovers() {
-        const data = await this.dataService.loadData('data/data.json');
-        this.categories = data.categories;
-
-        const categoriesWithCovers = {};
-        for (const key in this.categories) {
-            const category = this.categories[key];
-            const coverPromises = category.books.map(book => this.api.fetchBookDetails(book).then(details => details?.coverUrl));
-            const covers = await Promise.all(coverPromises);
-            categoriesWithCovers[key] = {
-                ...category,
-                covers: covers.map((url, i) => ({ url, query: category.books[i] }))
-            };
+    async getCoursesAndTags() {
+        if (this.allCourses.length === 0) {
+            const data = await this.api.get('/data.json');
+            this.allCourses = data.categories;
+            this.allCourses.forEach(course => {
+                course.tags.forEach(tag => this.allTags.add(tag));
+            });
         }
-        return categoriesWithCovers;
+        return { courses: this.allCourses, tags: Array.from(this.allTags) };
     }
 
-    getCategory(key) {
-        return this.categories ? this.categories[key] : null;
+    filterCourses(query, activeTags) {
+        const lowerCaseQuery = query.toLowerCase();
+
+        return this.allCourses.filter(course => {
+            const matchesQuery = query ? (
+                course.title.toLowerCase().includes(lowerCaseQuery) ||
+                course.description.toLowerCase().includes(lowerCaseQuery) ||
+                course.books.some(book => book.title.toLowerCase().includes(lowerCaseQuery))
+            ) : true;
+
+            const matchesTags = activeTags.length > 0 ? activeTags.every(tag => course.tags.includes(tag)) : true;
+
+            return matchesQuery && matchesTags;
+        });
     }
 }
