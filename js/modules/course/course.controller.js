@@ -1,7 +1,10 @@
+import { CourseService } from './course.service.js';
+import { CourseUI } from './course.ui.js';
+
 export class CourseController {
-    constructor(service, ui) {
-        this.service = service;
-        this.ui = ui;
+    constructor(apiService) {
+        this.service = new CourseService(apiService);
+        this.ui = new CourseUI();
     }
 
     async init() {
@@ -9,20 +12,16 @@ export class CourseController {
         const courseId = params.get('id');
 
         if (!courseId) {
-            this.ui.displayError("Помилка: ID курсу не знайдено.");
+            this.ui.displayError("Course ID is missing from the URL.");
             return;
         }
 
         try {
-            const courseDetails = await this.service.getCourseDetails(courseId);
-            if (!courseDetails) {
-                this.ui.displayError(`Помилка: Курс з ID "${courseId}" не знайдено.`);
-                return;
-            }
-            this.ui.render(courseDetails);
+            const course = await this.service.getCourseById(courseId);
+            this.ui.render(course);
         } catch (error) {
-            console.error("Failed to initialize course page:", error);
-            this.ui.displayError("Failed to load course data. Please check the console.");
+            console.error(error);
+            this.ui.displayError(error.message);
         }
     }
 }

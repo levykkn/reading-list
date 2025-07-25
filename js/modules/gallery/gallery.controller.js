@@ -1,24 +1,27 @@
+import { GalleryService } from './gallery.service.js';
+import { GalleryUI } from './gallery.ui.js';
+
 export class GalleryController {
-    constructor(service, ui) {
-        this.service = service;
-        this.ui = ui;
+    constructor(apiService) {
+        this.service = new GalleryService(apiService);
+        this.ui = new GalleryUI();
     }
 
     async init() {
         try {
-            const categories = await this.service.getCategoriesWithCovers();
-            this.ui.render(categories);
-            this.ui.setupEventListeners((key) => this.handleCategoryClick(key));
+            const { courses, tags } = await this.service.getCoursesAndTags();
+            this.ui.renderCourses(courses);
+            this.ui.renderTags(tags, () => this.handleFilterChange());
+            this.ui.onSearch(() => this.handleFilterChange());
         } catch (error) {
-            console.error("Failed to initialize gallery:", error);
-            this.ui.displayError("Failed to load data. Please check the console.");
+            this.ui.displayError("Could not load courses. Please try again later.");
         }
     }
 
-    handleCategoryClick(key) {
-        const category = this.service.getCategory(key);
-        if (category) {
-            window.location.href = `course.html?id=${key}`;
-        }
+    handleFilterChange() {
+        const query = this.ui.getSearchQuery();
+        const activeTags = this.ui.getActiveTags();
+        const filteredCourses = this.service.filterCourses(query, activeTags);
+        this.ui.renderCourses(filteredCourses);
     }
 }

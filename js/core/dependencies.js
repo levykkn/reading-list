@@ -11,13 +11,22 @@ import { API_KEY } from '../config.js';
 const googleBooksAPI = new GoogleBooksAPI(API_KEY);
 const dataService = new DataService();
 
-const galleryUI = new GalleryUI('#app-root', '#modal-root');
-const galleryService = new GalleryService(googleBooksAPI, dataService);
-const galleryController = new GalleryController(galleryService, galleryUI);
+// const galleryUI = new GalleryUI('#app-root', '#modal-root');
+//  
+// const galleryController = new GalleryController(galleryService, galleryUI);
 
 const courseUI = new CourseUI();
 const courseService = new CourseService(googleBooksAPI, dataService);
 const courseController = new CourseController(courseService, courseUI);
+
+const galleryUI = document.getElementById('app-root') 
+    ? new GalleryUI('#app-root', '#modal-root') 
+    : null;
+
+const galleryService = new GalleryService(googleBooksAPI, dataService);
+const galleryController = galleryUI 
+    ? new GalleryController(galleryService, galleryUI) 
+    : null;
 
 export const dependencies = {
     galleryController,

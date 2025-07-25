@@ -1,20 +1,15 @@
 export class CourseService {
-    constructor(api, dataService) {
-        this.api = api;
-        this.dataService = dataService;
+    constructor(apiService) {
+        this.api = apiService;
     }
 
-    async getCourseDetails(courseId) {
-        const data = await this.dataService.loadData('../data/data.json');
-        const course = data.categories[courseId];
-        if (!course) return null;
-
-        const bookPromises = course.books.map(bookQuery => this.api.fetchBookDetails(bookQuery));
-        const books = await Promise.all(bookPromises);
-
-        return {
-            ...course,
-            books
-        };
+    async getCourseById(courseId) {
+        const data = await this.api.get('/data.json');
+        // The .find() method is correct for the array structure in your data.json
+        const course = data.categories.find(c => c.id === courseId);
+        if (course) {
+            return course;
+        }
+        throw new Error(`Course with ID "${courseId}" not found.`);
     }
 }
