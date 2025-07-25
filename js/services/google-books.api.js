@@ -7,14 +7,25 @@ export class GoogleBooksAPI {
 
     async fetchBookDetails(query) {
         if (!this.apiKey) return null;
+
+        const cacheKey = `book_${query}`;
+
         if (this.cache.has(query)) {
             return this.cache.get(query);
         }
 
+        const cachedData = localStorage.getItem(cacheKey);
+        if (cachedData) {
+            const parsedData = JSON.parse(cachedData);
+            this.cache.set(query, parsedData); 
+            return parsedData;
+        }
+        
         const url = `${this.baseUrl}?q=${encodeURIComponent(query)}&maxResults=1&key=${this.apiKey}`;
         try {
             const response = await fetch(url);
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            
             const data = await response.json();
             if (!data.items || data.items.length === 0) return { query };
             
@@ -31,11 +42,14 @@ export class GoogleBooksAPI {
                 description: book.description || 'Опис відсутній.'
             };
 
+            
+            localStorage.setItem(cacheKey, JSON.stringify(bookDetails));
             this.cache.set(query, bookDetails);
+
             return bookDetails;
         } catch (error) {
             console.error(`API Error for "${query}":`, error);
-            return { query };
+            return { query }; 
         }
     }
 }
