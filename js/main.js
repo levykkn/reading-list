@@ -1,7 +1,9 @@
-import { API_KEY } from './config.js';
-import { App } from './app.js'; 
+import { App } from './core/app.js';
+import { dependencies } from './core/dependencies.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    const app = new App(API_KEY);
+    const app = new App(dependencies);
     app.init();
 });
+
+//
