@@ -16,12 +16,14 @@
             <p class="text-lg text-gray-400">Візуальний гід по ключових епохах літератури та філософії.</p>
         </header>
         <div class="relative">
-            <div id="gallery-container" class="flex overflow-x-auto snap-x snap-mandatory space-x-6 py-4 no-scrollbar scroll-smooth"></div>
+            <div id="gallery-container" class="flex overflow-x-auto snap-x snap-mandatory space-x-6 py-4 no-scrollbar scroll-smooth">
+                <div class="loader"></div>
+            </div>
             <button id="scroll-left" class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 transition-colors rounded-full p-2 text-white -ml-4 z-10 hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
             </button>
             <button id="scroll-right" class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 transition-colors rounded-full p-2 text-white -mr-4 z-10 hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                <svg xmlns="http://www.w.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
             </button>
         </div>
     </div>
