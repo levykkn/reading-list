@@ -2,20 +2,25 @@ import { APIService } from './api.service.js';
 
 export class App {
     constructor() {
-        // For development, we point to the local data directory.
-        // This can be changed to 'https://api.yourwebsite.com' later.
-        this.api = new APIService('../data');
+        this.api = new APIService('http://localhost:3000');
     }
 
     async init() {
         const path = window.location.pathname;
 
-        if (path.endsWith('course.html')) {
+        if (path.endsWith('admin.html')) {
+            await this.loadAdminModule();
+        } else if (path.endsWith('course.html')) {
             await this.loadCourseModule();
         } else {
-            // Default to loading the gallery on any other page (e.g., index.html)
             await this.loadGalleryModule();
         }
+    }
+
+    async loadAdminModule() {
+        const { AdminController } = await import('../modules/admin/admin.controller.js');
+        const controller = new AdminController(this.api);
+        controller.init();
     }
 
     async loadGalleryModule() {

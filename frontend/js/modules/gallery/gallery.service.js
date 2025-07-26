@@ -7,7 +7,7 @@ export class GalleryService {
 
     async getCoursesAndTags() {
         if (this.allCourses.length === 0) {
-            const data = await this.api.get('/data.json');
+            const data = await this.api.get('/api/courses');
             this.allCourses = data.categories;
             this.allCourses.forEach(course => {
                 course.tags.forEach(tag => this.allTags.add(tag));
@@ -15,6 +15,7 @@ export class GalleryService {
         }
         return { courses: this.allCourses, tags: Array.from(this.allTags) };
     }
+
 
     filterCourses(query, activeTags) {
         const lowerCaseQuery = query.toLowerCase();
