@@ -1,10 +1,42 @@
 {
   "categories": [
     {
-      "id": "greek-tragedy",
-      "title": "Greek Tragedy",
-      "description": "This course explores the origins, development, and legacy of Athenian tragedy in the 5th century BCE through the analysis of works by the three great tragedians: Aeschylus, Sophocles, and Euripides.",
-      "tags": ["Ancient", "Philosophy", "Theatre"],
+      "id": "archaic-poetry",
+      "title": "Archaic Greek Poetry",
+      "description": "A foundational course on the earliest surviving works of Western literature. It explores the epic traditions that shaped Greek culture, focusing on the foundational myths, heroism, and the nature of the gods in the works of Homer and Hesiod, and the birth of individual lyric voice with Sappho and Pindar.",
+      "tags": ["Archaic", "Poetry", "Epic", "Mythology"],
+      "books": [
+        {
+          "id": "homer-iliad",
+          "title": "The Iliad",
+          "author": "Homer",
+          "coverUrl": "https://imgs.search.brave.com/_kuoaBd4xW4RHoMYpHnzAfPzCmbKsbyxqZ3keJ5bE68/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jb3Zl/cnMuYXVkaW9ib29r/cy5jb20vaW1hZ2Vz/L2NvdmVycy9mdWxs/Lzk3ODAyNDE0NDA5/MjYuanBn"
+        },
+        {
+          "id": "hesiod-theogony",
+          "title": "Theogony / Works and Days",
+          "author": "Hesiod",
+          "coverUrl": "https://covers.openlibrary.org/b/id/10042488-L.jpg"
+        },
+        {
+          "id": "sappho-fragments",
+          "title": "If Not, Winter: Fragments of Sappho",
+          "author": "Sappho",
+          "coverUrl": "https://covers.openlibrary.org/b/id/10037837-L.jpg"
+        },
+        {
+          "id": "pindar-odes",
+          "title": "The Odes of Pindar",
+          "author": "Pindar",
+          "coverUrl": "https://covers.openlibrary.org/b/id/10313831-L.jpg"
+        }
+      ]
+    },
+    {
+      "id": "athenian-drama",
+      "title": "Athenian Drama: Tragedy & Comedy",
+      "description": "This course examines the golden age of Athenian theatre. It covers the political, social, and religious dimensions of tragedy through the works of Aeschylus, Sophocles, and Euripides, and the satirical, political commentary of Old Comedy with Aristophanes.",
+      "tags": ["Theatre", "Tragedy", "Comedy", "Ancient"],
       "books": [
         {
           "id": "aeschylus-oresteia",
@@ -13,150 +45,182 @@
           "coverUrl": "https://covers.openlibrary.org/b/id/8268481-L.jpg"
         },
         {
-          "id": "sophocles-oedipus",
-          "title": "Oedipus Rex",
+          "id": "sophocles-theban-plays",
+          "title": "The Theban Plays",
           "author": "Sophocles",
-          "coverUrl": "https://covers.openlibrary.org/b/id/10174158-L.jpg"
+          "coverUrl": "https://covers.openlibrary.org/b/id/12658789-L.jpg"
         },
         {
-          "id": "euripides-medea",
-          "title": "Medea",
+          "id": "euripides-bacchae",
+          "title": "The Bacchae",
           "author": "Euripides",
-          "coverUrl": "https://covers.openlibrary.org/b/id/12840510-L.jpg"
+          "coverUrl": "https://covers.openlibrary.org/b/id/8020468-L.jpg"
         },
         {
-          "id": "aristophanes-frogs",
-          "title": "The Frogs",
+          "id": "aristophanes-lysistrata",
+          "title": "Lysistrata",
           "author": "Aristophanes",
-          "coverUrl": "https://covers.openlibrary.org/b/id/8289966-L.jpg"
+          "coverUrl": "https://covers.openlibrary.org/b/id/10039088-L.jpg"
         }
       ]
     },
     {
-      "id": "classical-philosophy",
-      "title": "Classical Philosophy",
-      "description": "An introduction to the foundations of Western philosophical thought, focusing on the metaphysics, ethics, and political theory of Plato and Aristotle, as well as their predecessors and followers.",
-      "tags": ["Ancient", "Philosophy", "Ethics"],
+      "id": "early-philosophy",
+      "title": "Early Greek Philosophy & Thought",
+      "description": "Trace the origins of Western philosophy, from the cosmological inquiries of the Pre-Socratics to the systematic ethical and political frameworks of Plato and Aristotle. This course also includes the foundational texts of Western medicine.",
+      "tags": ["Philosophy", "Ancient", "Ethics", "Politics"],
       "books": [
         {
-          "id": "plato-republic",
+          "id": "presocratics-fragments",
+          "title": "The Presocratic Philosophers",
+          "author": "The Pre-Socratics",
+          "coverUrl": "https://covers.openlibrary.org/b/id/8254823-L.jpg"
+        },
+        {
+          "id": "platon-republic",
           "title": "The Republic",
-          "author": "Plato",
+          "author": "Platon (Plato)",
           "coverUrl": "https://covers.openlibrary.org/b/id/8286109-L.jpg"
         },
         {
-          "id": "aristotle-ethics",
-          "title": "Nicomachean Ethics",
+          "id": "aristotle-politics",
+          "title": "Politics",
           "author": "Aristotle",
-          "coverUrl": "https://covers.openlibrary.org/b/id/9242953-L.jpg"
+          "coverUrl": "https://covers.openlibrary.org/b/id/12839958-L.jpg"
         },
         {
-          "id": "plato-apology",
-          "title": "Apology",
-          "author": "Plato",
-          "coverUrl": "https://covers.openlibrary.org/b/id/7901898-L.jpg"
-        },
-        {
-          "id": "heraclitus-fragments",
-          "title": "Fragments",
-          "author": "Heraclitus",
-          "coverUrl": "https://covers.openlibrary.org/b/id/10478042-L.jpg"
+          "id": "hippocrates-writings",
+          "title": "The Hippocratic Writings",
+          "author": "Hippocrates",
+          "coverUrl": "https://covers.openlibrary.org/b/id/2493399-L.jpg"
         }
       ]
     },
     {
-      "id": "renaissance-humanism",
-      "title": "Renaissance Humanism",
-      "description": "This course is dedicated to the revival of classical ideals in Italy and Northern Europe, exploring the works of Petrarch, Machiavelli, Erasmus, Montaigne, and the drama of Shakespeare.",
-      "tags": ["Renaissance", "Philosophy", "Art", "Politics"],
+      "id": "greek-historians",
+      "title": "The Greek Historians",
+      "description": "An analysis of the birth of historiography. This course contrasts the ethnographic and narrative style of Herodotus with the rigorous, political analysis of Thucydides' account of the Peloponnesian War, alongside later historical and biographical works by Xenophon and Plutarch.",
+      "tags": ["History", "Ancient", "Politics", "Biography"],
       "books": [
         {
-          "id": "dante-divine-comedy",
-          "title": "The Divine Comedy",
-          "author": "Dante Alighieri",
-          "coverUrl": "https://covers.openlibrary.org/b/id/8314115-L.jpg"
+          "id": "herodotus-histories",
+          "title": "The Histories",
+          "author": "Herodotus",
+          "coverUrl": "https://covers.openlibrary.org/b/id/10041113-L.jpg"
         },
         {
-          "id": "machiavelli-prince",
-          "title": "The Prince",
-          "author": "Niccolò Machiavelli",
-          "coverUrl": "https://covers.openlibrary.org/b/id/10042772-L.jpg"
+          "id": "thucydides-peloponnesian-war",
+          "title": "History of the Peloponnesian War",
+          "author": "Thucydides",
+          "coverUrl": "https://covers.openlibrary.org/b/id/8293976-L.jpg"
         },
         {
-          "id": "shakespeare-hamlet",
-          "title": "Hamlet",
-          "author": "William Shakespeare",
-          "coverUrl": "https://covers.openlibrary.org/b/id/8264149-L.jpg"
+          "id": "xenophon-anabasis",
+          "title": "The Anabasis",
+          "author": "Xenophon",
+          "coverUrl": "https://covers.openlibrary.org/b/id/10038933-L.jpg"
         },
         {
-          "id": "montaigne-essays",
-          "title": "The Complete Essays",
-          "author": "Michel de Montaigne",
-          "coverUrl": "https://covers.openlibrary.org/b/id/10037817-L.jpg"
+          "id": "plutarch-lives",
+          "title": "Parallel Lives",
+          "author": "Plutarch",
+          "coverUrl": "https://covers.openlibrary.org/b/id/10042436-L.jpg"
         }
       ]
     },
     {
-      "id": "19c-russian-lit",
-      "title": "19th Century Russian Literature",
-      "description": "A deep dive into the psychological realism and philosophical quests of the Russian classics, including an analysis of the great novels of Dostoevsky and Tolstoy and the drama of Chekhov.",
-      "tags": ["19th Century", "Novel", "Russia", "Realism"],
+      "id": "hellenistic-thought",
+      "title": "Hellenistic Thought & Science",
+      "description": "Explore the intellectual world after Alexander the Great. This course covers the shift towards personal ethics in the philosophies of Epicurus and the Stoics (Epictetus, Marcus Aurelius), the birth of formal geometry with Euclid, and the great scientific minds of the Hellenistic period.",
+      "tags": ["Hellenistic", "Philosophy", "Science", "Math"],
       "books": [
         {
-          "id": "dostoevsky-crime-punishment",
-          "title": "Crime and Punishment",
-          "author": "Fyodor Dostoevsky",
-          "coverUrl": "https://covers.openlibrary.org/b/id/8391032-L.jpg"
+          "id": "epicurus-letters",
+          "title": "The Art of Happiness",
+          "author": "Epicurus",
+          "coverUrl": "https://covers.openlibrary.org/b/id/8287515-L.jpg"
         },
         {
-          "id": "tolstoy-war-peace",
-          "title": "War and Peace",
-          "author": "Leo Tolstoy",
-          "coverUrl": "https://covers.openlibrary.org/b/id/10492854-L.jpg"
+          "id": "epictetus-discourses",
+          "title": "Discourses and Selected Writings",
+          "author": "Epictetus",
+          "coverUrl": "https://covers.openlibrary.org/b/id/10309978-L.jpg"
         },
         {
-          "id": "gogol-dead-souls",
-          "title": "Dead Souls",
-          "author": "Nikolai Gogol",
-          "coverUrl": "https://covers.openlibrary.org/b/id/8290928-L.jpg"
+          "id": "marcus-aurelius-meditations",
+          "title": "Meditations",
+          "author": "Marcus Aurelius",
+          "coverUrl": "https://covers.openlibrary.org/b/id/10042875-L.jpg"
         },
         {
-          "id": "chekhov-cherry-orchard",
-          "title": "The Cherry Orchard",
-          "author": "Anton Chekhov",
-          "coverUrl": "https://covers.openlibrary.org/b/id/8020845-L.jpg"
+          "id": "euclid-elements",
+          "title": "Euclid's Elements",
+          "author": "Euclid",
+          "coverUrl": "https://covers.openlibrary.org/b/id/8254642-L.jpg"
         }
       ]
     },
     {
-      "id": "existentialism",
-      "title": "Existentialism",
-      "description": "A study of the philosophy and literature of existentialism, focusing on themes of freedom, responsibility, absurdity, and the meaning of life in the works of Sartre, Camus, de Beauvoir, and their predecessors.",
-      "tags": ["20th Century", "Philosophy", "France", "Existentialism"],
+      "id": "hellenistic-science-math",
+      "title": "Hellenistic Science & Mathematics",
+      "description": "A survey of the major scientific and mathematical achievements from Archimedes to Ptolemy. This course examines the development of geometry, astronomy, mechanics, and medicine in the ancient world, including later commentators like Lucian and Plotinus.",
+      "tags": ["Hellenistic", "Science", "Math", "Roman"],
       "books": [
         {
-          "id": "sartre-nausea",
-          "title": "Nausea",
-          "author": "Jean-Paul Sartre",
-          "coverUrl": "https://covers.openlibrary.org/b/id/8291884-L.jpg"
+          "id": "archimedes-works",
+          "title": "The Works of Archimedes",
+          "author": "Archimedes",
+          "coverUrl": "https://covers.openlibrary.org/b/id/8017408-L.jpg"
         },
         {
-          "id": "camus-stranger",
-          "title": "The Stranger",
-          "author": "Albert Camus",
-          "coverUrl": "https://covers.openlibrary.org/b/id/10041309-L.jpg"
+          "id": "apollonius-conics",
+          "title": "Conics",
+          "author": "Apollonius of Perga",
+          "coverUrl": "https://covers.openlibrary.org/b/id/788874-L.jpg"
         },
         {
-          "id": "debeauvoir-second-sex",
-          "title": "The Second Sex",
-          "author": "Simone de Beauvoir",
-          "coverUrl": "https://covers.openlibrary.org/b/id/10040716-L.jpg"
+          "id": "ptolemy-almagest",
+          "title": "The Almagest",
+          "author": "Ptolemy",
+          "coverUrl": "https://covers.openlibrary.org/b/id/101735-L.jpg"
         },
         {
-          "id": "dostoevsky-notes-underground",
-          "title": "Notes from Underground",
-          "author": "Fyodor Dostoevsky",
-          "coverUrl": "https://covers.openlibrary.org/b/id/8287570-L.jpg"
+          "id": "galen-natural-faculties",
+          "title": "On the Natural Faculties",
+          "author": "Galen",
+          "coverUrl": "https://covers.openlibrary.org/b/id/8048128-L.jpg"
+        }
+      ]
+    },
+    {
+      "id": "roman-era-thinkers",
+      "title": "Roman Era Thinkers",
+      "description": "A look into the intellectual life during the Roman Empire, featuring the satirical dialogues of Lucian, the Neoplatonic philosophy of Plotinus, and the mathematical work of Nicomachus of Gerasa.",
+      "tags": ["Roman", "Philosophy", "Satire", "Math"],
+      "books": [
+        {
+          "id": "lucian-dialogues",
+          "title": "Selected Dialogues",
+          "author": "Lucian",
+          "coverUrl": "https://covers.openlibrary.org/b/id/10173693-L.jpg"
+        },
+        {
+          "id": "plotinus-enneads",
+          "title": "The Enneads",
+          "author": "Plotinus",
+          "coverUrl": "https://covers.openlibrary.org/b/id/10037813-L.jpg"
+        },
+        {
+            "id": "nicomachus-arithmetic",
+            "title": "Introduction to Arithmetic",
+            "author": "Nicomachus of Gerasa",
+            "coverUrl": "https://covers.openlibrary.org/b/id/642953-L.jpg"
+        },
+        {
+            "id": "plutarch-essays",
+            "title": "Essays",
+            "author": "Plutarch",
+            "coverUrl": "https://covers.openlibrary.org/b/id/10042436-L.jpg"
         }
       ]
     }
