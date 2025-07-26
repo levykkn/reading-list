@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Reading Lists</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        .form-input { @apply block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:border-transparent sm:text-sm; }
+        .form-label { @apply block text-sm font-medium text-gray-700; }
+        .form-section { @apply bg-white border border-gray-200/80 p-6 rounded-lg; }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <header class="mb-8 border-b pb-5">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-3xl font-bold tracking-tight text-gray-900">Admin Panel</h1>
+                    <p class="mt-1 text-sm text-gray-500">Create and manage your reading list courses.</p>
+                </div>
+                <a href="index.html" class="text-sm font-medium text-gray-500 hover:text-gray-900">View Site &rarr;</a>
+            </div>
+        </header>
+
+        <form id="create-course-form" class="space-y-6">
+            
+            <div class="form-section">
+                <h2 class="text-lg font-medium leading-6 text-gray-900">Course Details</h2>
+                <div class="mt-4 grid grid-cols-1 gap-y-6">
+                    <div>
+                        <label for="title" class="form-label">Course Title</label>
+                        <div class="mt-1"><input type="text" id="title" name="title" class="form-input" required></div>
+                    </div>
+                    <div>
+                        <label for="description" class="form-label">Description (HTML supported)</label>
+                        <div class="mt-1"><textarea id="description" name="description" rows="5" class="form-input" required></textarea></div>
+                    </div>
+                    <div>
+                        <label for="tags" class="form-label">Tags (comma-separated)</label>
+                        <div class="mt-1"><input type="text" id="tags" name="tags" class="form-input" required></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-lg font-medium text-gray-900">Book List</h2>
+                    <button type="button" id="add-book-btn" class="text-sm font-medium text-blue-600 hover:text-blue-500">+ Add Book</button>
+                </div>
+                <div id="books-container" class="mt-4 space-y-4">
+                    </div>
+            </div>
+
+            <div class="flex justify-end pt-4">
+                <button type="submit" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded-lg transition-colors">Create Course</button>
+            </div>
+        </form>
+
+        <div id="form-status" class="mt-4 text-center"></div>
+    </div>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
