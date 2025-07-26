@@ -1,0 +1,24 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# environment variables
+.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# OS or Editor folders
+.vscode/
+.idea/
+*.swp
+
+# Logs
+logs/
+*.log
+
+# Frontend dependencies (if any managed separately)
+frontend/node_modules/
