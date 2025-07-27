@@ -3,11 +3,13 @@ const fs = require('fs');
 const path = require('path');
 const url = require('url');
 
-const { PORT, PUBLIC_DIR } = require('./config');
+const { PORT, PUBLIC_DIR, NODE_ENV } = require('./config');
 const sendResponse = require('./utils/send.response');
+const mainRouter = require('./routes'); 
 
-const coursesRoute = require('./routes/courses.route');
-const adminRoute = require('./routes/admin.route');
+if (NODE_ENV === 'development') {
+    require('./utils/reloader')();
+}
 
 const MIME_TYPES = {
     '.html': 'text/html',
@@ -21,16 +23,14 @@ const MIME_TYPES = {
 const server = http.createServer(async (req, res) => {
     const parsedUrl = url.parse(req.url);
     const pathname = parsedUrl.pathname;
-    const method = req.method;
 
-    if (method === 'OPTIONS') return sendResponse(res, 204, null);
+    if (req.method === 'OPTIONS') return sendResponse(res, 204, null);
 
     try {
-        // Route handling
-        if (pathname.startsWith('/api/courses')) return await coursesRoute(req, res);
-        if (pathname.startsWith('/api/admin')) return await adminRoute(req, res);
+        if (pathname.startsWith('/api/')) {
+            return await mainRouter(req, res);
+        }
 
-        // Static File Serving
         const requestedPath = pathname === '/' ? '/index.html' : pathname;
         const filePath = path.join(PUBLIC_DIR, requestedPath);
         const fileExt = path.extname(filePath);
@@ -38,10 +38,19 @@ const server = http.createServer(async (req, res) => {
 
         fs.readFile(filePath, (err, content) => {
             if (err) {
-                if (err.code === 'ENOENT') return sendResponse(res, 404, { error: 'Not Found' });
-                return sendResponse(res, 500, { error: 'Internal Server Error' });
+                if (err.code === 'ENOENT') {
+                    fs.readFile(path.join(PUBLIC_DIR, 'index.html'), (indexErr, indexContent) => {
+                        if (indexErr) {
+                            return sendResponse(res, 500, { error: 'Internal Server Error' });
+                        }
+                        sendResponse(res, 200, indexContent, 'text/html');
+                    });
+                } else {
+                    return sendResponse(res, 500, { error: 'Internal Server Error' });
+                }
+            } else {
+                sendResponse(res, 200, content, contentType);
             }
-            sendResponse(res, 200, content, contentType);
         });
     } catch (error) {
         console.error('Server Error:', error);
@@ -50,5 +59,5 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, () => {
-    console.log(`✅ Server is running. Visit http://localhost:${PORT}`);
+    console.log(`Server is running. Visit http://localhost:${PORT}`);
 });

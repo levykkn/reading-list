@@ -1,27 +1,29 @@
-const fs = require('fs/promises');
-const path = require('path');
+const dal = require('../data/dal'); // Import the new DAL
 
-// Path to the JSON "database"
-const DB_PATH = path.join(__dirname, '..', 'data', 'data.json');
-
+/**
+ * The CourseService handles the business logic for courses.
+ * It relies on the Data Access Layer (DAL) to interact with the data source.
+ */
 class CourseService {
     /**
-     * Reads all courses from the data file.
-     * @returns {Promise<Object>} The parsed JSON data.
+     * Reads all courses from the data source via the DAL.
+     * @returns {Promise<Object>} The courses data.
      */
     async getCourses() {
-        const data = await fs.readFile(DB_PATH, 'utf8');
-        return JSON.parse(data);
+        // The service now calls the DAL to get data, abstracting the "how".
+        return await dal.readData();
     }
 
     /**
-     * Adds a new course to the data file.
+     * Creates a new course and saves it to the data source via the DAL.
      * @param {Object} newCourseData - Data for the new course.
      * @returns {Promise<Object>} The newly added course object.
      */
     async createCourse(newCourseData) {
-        const db = await this.getCourses();
+        // 1. Get current data from the DAL
+        const db = await dal.readData();
 
+        // 2. Perform business logic (create new course object)
         const newCourse = {
             id: newCourseData.title
                 ? newCourseData.title.toLowerCase().replace(/\s+/g, '-')
@@ -29,13 +31,15 @@ class CourseService {
             ...newCourseData
         };
 
-        // Assuming your data structure is { categories: [...] }
+        // Ensure the categories array exists before pushing to it
         if (!Array.isArray(db.categories)) {
             db.categories = [];
         }
         db.categories.push(newCourse);
 
-        await fs.writeFile(DB_PATH, JSON.stringify(db, null, 2), 'utf8');
+        // 3. Write the updated data back using the DAL
+        await dal.writeData(db);
+        
         return newCourse;
     }
 }
