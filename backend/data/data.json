@@ -4,7 +4,12 @@
       "id": "archaic-poetry",
       "title": "Archaic Greek Poetry",
       "description": "A foundational course on the earliest surviving works of Western literature. It explores the epic traditions that shaped Greek culture, focusing on the foundational myths, heroism, and the nature of the gods in the works of Homer and Hesiod, and the birth of individual lyric voice with Sappho and Pindar.",
-      "tags": ["Archaic", "Poetry", "Epic", "Mythology"],
+      "tags": [
+        "Archaic",
+        "Poetry",
+        "Epic",
+        "Mythology"
+      ],
       "books": [
         {
           "id": "homer-iliad",
@@ -36,7 +41,12 @@
       "id": "athenian-drama",
       "title": "Athenian Drama: Tragedy & Comedy",
       "description": "This course examines the golden age of Athenian theatre. It covers the political, social, and religious dimensions of tragedy through the works of Aeschylus, Sophocles, and Euripides, and the satirical, political commentary of Old Comedy with Aristophanes.",
-      "tags": ["Theatre", "Tragedy", "Comedy", "Ancient"],
+      "tags": [
+        "Theatre",
+        "Tragedy",
+        "Comedy",
+        "Ancient"
+      ],
       "books": [
         {
           "id": "aeschylus-oresteia",
@@ -68,7 +78,12 @@
       "id": "early-philosophy",
       "title": "Early Greek Philosophy & Thought",
       "description": "Trace the origins of Western philosophy, from the cosmological inquiries of the Pre-Socratics to the systematic ethical and political frameworks of Plato and Aristotle. This course also includes the foundational texts of Western medicine.",
-      "tags": ["Philosophy", "Ancient", "Ethics", "Politics"],
+      "tags": [
+        "Philosophy",
+        "Ancient",
+        "Ethics",
+        "Politics"
+      ],
       "books": [
         {
           "id": "presocratics-fragments",
@@ -100,7 +115,12 @@
       "id": "greek-historians",
       "title": "The Greek Historians",
       "description": "An analysis of the birth of historiography. This course contrasts the ethnographic and narrative style of Herodotus with the rigorous, political analysis of Thucydides' account of the Peloponnesian War, alongside later historical and biographical works by Xenophon and Plutarch.",
-      "tags": ["History", "Ancient", "Politics", "Biography"],
+      "tags": [
+        "History",
+        "Ancient",
+        "Politics",
+        "Biography"
+      ],
       "books": [
         {
           "id": "herodotus-histories",
@@ -132,7 +152,12 @@
       "id": "hellenistic-thought",
       "title": "Hellenistic Thought & Science",
       "description": "Explore the intellectual world after Alexander the Great. This course covers the shift towards personal ethics in the philosophies of Epicurus and the Stoics (Epictetus, Marcus Aurelius), the birth of formal geometry with Euclid, and the great scientific minds of the Hellenistic period.",
-      "tags": ["Hellenistic", "Philosophy", "Science", "Math"],
+      "tags": [
+        "Hellenistic",
+        "Philosophy",
+        "Science",
+        "Math"
+      ],
       "books": [
         {
           "id": "epicurus-letters",
@@ -164,7 +189,12 @@
       "id": "hellenistic-science-math",
       "title": "Hellenistic Science & Mathematics",
       "description": "A survey of the major scientific and mathematical achievements from Archimedes to Ptolemy. This course examines the development of geometry, astronomy, mechanics, and medicine in the ancient world, including later commentators like Lucian and Plotinus.",
-      "tags": ["Hellenistic", "Science", "Math", "Roman"],
+      "tags": [
+        "Hellenistic",
+        "Science",
+        "Math",
+        "Roman"
+      ],
       "books": [
         {
           "id": "archimedes-works",
@@ -196,7 +226,12 @@
       "id": "roman-era-thinkers",
       "title": "Roman Era Thinkers",
       "description": "A look into the intellectual life during the Roman Empire, featuring the satirical dialogues of Lucian, the Neoplatonic philosophy of Plotinus, and the mathematical work of Nicomachus of Gerasa.",
-      "tags": ["Roman", "Philosophy", "Satire", "Math"],
+      "tags": [
+        "Roman",
+        "Philosophy",
+        "Satire",
+        "Math"
+      ],
       "books": [
         {
           "id": "lucian-dialogues",
@@ -211,18 +246,34 @@
           "coverUrl": "https://covers.openlibrary.org/b/id/10037813-L.jpg"
         },
         {
-            "id": "nicomachus-arithmetic",
-            "title": "Introduction to Arithmetic",
-            "author": "Nicomachus of Gerasa",
-            "coverUrl": "https://covers.openlibrary.org/b/id/642953-L.jpg"
+          "id": "nicomachus-arithmetic",
+          "title": "Introduction to Arithmetic",
+          "author": "Nicomachus of Gerasa",
+          "coverUrl": "https://covers.openlibrary.org/b/id/642953-L.jpg"
         },
         {
-            "id": "plutarch-essays",
-            "title": "Essays",
-            "author": "Plutarch",
-            "coverUrl": "https://covers.openlibrary.org/b/id/10042436-L.jpg"
+          "id": "plutarch-essays",
+          "title": "Essays",
+          "author": "Plutarch",
+          "coverUrl": "https://covers.openlibrary.org/b/id/10042436-L.jpg"
+        }
+      ]
+    },
+    {
+      "id": "course-title",
+      "title": "Course Title",
+      "description": "Description (HTML supported)\n",
+      "tags": [
+        "kukva"
+      ],
+      "books": [
+        {
+          "id": "kukva",
+          "title": "Kukva",
+          "author": "Dzyavun)",
+          "coverUrl": "https://imgs.search.brave.com/VeH7yynij8791IEAF9Mc6dnG7-Pgtn0At2raBi58Ouc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTF4UlFCQWk1Rkwu/anBn"
         }
       ]
     }
   ]
-} 
+}
