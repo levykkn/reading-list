@@ -1,0 +1,3 @@
+The data folder contains the application's data source and the logic for accessing it.
+
+dal.js (Data Access Layer) is responsible for all read/write operations to the data source (e.g., data.json). This isolates the data storage mechanism from the business logic in the services layer. By doing this, we could easily swap our data.json file for a real database (like PostgreSQL or MongoDB) in the future without having to change any code in the service or controller layers.
