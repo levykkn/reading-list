@@ -3,34 +3,47 @@ export class APIService {
         this.baseUrl = baseUrl;
     }
 
-    async get(endpoint) {
+    async _request(endpoint, options) {
         try {
-            const response = await fetch(`${this.baseUrl}${endpoint}`);
-            if (!response.ok) {
-                throw new Error(`API Error: ${response.status} ${response.statusText}`);
-            }
-            return await response.json();
-        } catch (error) {
-            console.error(`Failed to fetch from endpoint: ${endpoint}`, error);
-            throw error; 
-        }
-    }
-    async post(endpoint, data) {
-        try {
-            const response = await fetch(`${this.baseUrl}${endpoint}`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(data)
-            });
+            const response = await fetch(`${this.baseUrl}${endpoint}`, options);
             
+            // Handle cases with no content response (like DELETE)
+            if (response.status === 204) {
+                return null;
+            }
+
             const responseData = await response.json();
             if (!response.ok) {
-                throw new Error(responseData.error || 'API request failed');
+                throw new Error(responseData.error || `API Error: ${response.status}`);
             }
             return responseData;
         } catch (error) {
-            console.error(`Failed to post to endpoint: ${endpoint}`, error);
+            console.error(`API request failed for ${options.method} ${endpoint}:`, error);
             throw error;
         }
+    }
+
+    get(endpoint) {
+        return this._request(endpoint, { method: 'GET' });
+    }
+
+    post(endpoint, data) {
+        return this._request(endpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        });
+    }
+
+    put(endpoint, data) {
+        return this._request(endpoint, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        });
+    }
+
+    delete(endpoint) {
+        return this._request(endpoint, { method: 'DELETE' });
     }
 }
