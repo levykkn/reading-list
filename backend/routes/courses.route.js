@@ -1,15 +1,10 @@
-const { getCourses, createCourse } = require('../controllers/course.controller');
-const sendResponse = require('../utils/send.response');
+const { getCourses, createCourse, updateCourse, deleteCourse } = require('../controllers/course.controller');
 
 const courseRoutes = {
-
-    'GET /api/courses': (req, res) => {
-        getCourses(req, res, sendResponse);
-    },
-
-    'POST /api/courses': (req, res) => {
-        createCourse(req, res, sendResponse);
-    }
+    'GET /api/courses': getCourses,
+    'POST /api/courses': createCourse,
+    'PUT /api/courses/:id': updateCourse,
+    'DELETE /api/courses/:id': deleteCourse
 };
 
 module.exports = courseRoutes;

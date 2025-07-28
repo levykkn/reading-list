@@ -28,12 +28,6 @@
           "title": "If Not, Winter: Fragments of Sappho",
           "author": "Sappho",
           "coverUrl": "https://covers.openlibrary.org/b/id/10037837-L.jpg"
-        },
-        {
-          "id": "pindar-odes",
-          "title": "The Odes of Pindar",
-          "author": "Pindar",
-          "coverUrl": "https://covers.openlibrary.org/b/id/10313831-L.jpg"
         }
       ]
     },
@@ -246,32 +240,10 @@
           "coverUrl": "https://covers.openlibrary.org/b/id/10037813-L.jpg"
         },
         {
-          "id": "nicomachus-arithmetic",
-          "title": "Introduction to Arithmetic",
-          "author": "Nicomachus of Gerasa",
-          "coverUrl": "https://covers.openlibrary.org/b/id/642953-L.jpg"
-        },
-        {
           "id": "plutarch-essays",
           "title": "Essays",
           "author": "Plutarch",
           "coverUrl": "https://covers.openlibrary.org/b/id/10042436-L.jpg"
-        }
-      ]
-    },
-    {
-      "id": "course-title",
-      "title": "Course Title",
-      "description": "Description (HTML supported)\n",
-      "tags": [
-        "kukva"
-      ],
-      "books": [
-        {
-          "id": "kukva",
-          "title": "Kukva",
-          "author": "Dzyavun)",
-          "coverUrl": "https://imgs.search.brave.com/VeH7yynij8791IEAF9Mc6dnG7-Pgtn0At2raBi58Ouc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTF4UlFCQWk1Rkwu/anBn"
         }
       ]
     }
