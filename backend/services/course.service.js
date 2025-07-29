@@ -9,7 +9,7 @@ class CourseService {
         const db = await dal.readData();
         
         const newCourse = {
-            id: newCourseData.title.toLowerCase().replace(/\s+/g, '-') + '-' + Date.now(),
+            id: `course-${Date.now()}`, // Generate a unique ID
             ...newCourseData
         };
 
