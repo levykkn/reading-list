@@ -167,8 +167,7 @@ export class AdminUI {
     }
 
     getFormData() {
-        return {
-            id: this.currentCourseId || this.form.elements.title.value.toLowerCase().replace(/\s+/g, '-'),
+        const formData = {
             title: this.form.elements.title.value,
             description: this.form.elements.description.value,
             tags: Array.from(this.tags),
@@ -179,6 +178,12 @@ export class AdminUI {
                 coverUrl: card.dataset.coverurl
             }))
         };
+
+        if (this.currentCourseId) {
+            formData.id = this.currentCourseId;
+        }
+        
+        return formData;
     }
 
     // --- Tag Input ---

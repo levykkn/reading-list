@@ -1,249 +1,524 @@
 {
   "categories": [
     {
-      "id": "archaic-poetry",
-      "title": "Archaic Greek Poetry",
-      "description": "A foundational course on the earliest surviving works of Western literature. It explores the epic traditions that shaped Greek culture, focusing on the foundational myths, heroism, and the nature of the gods in the works of Homer and Hesiod, and the birth of individual lyric voice with Sappho and Pindar.",
+      "id": "course-1",
+      "title": "The Foundations of French Thought: Renaissance and Classicism (16th & 17th Centuries",
+      "description": "This course explores the vibrant intellectual and artistic landscape of the French Renaissance and the subsequent age of Classicism. It delves into the humanist rediscovery of antiquity, the profound questions of selfhood and knowledge, and the establishment of formal aesthetic principles that would shape French culture for centuries. It will examine the birth of the essay, the golden age of French theatre, and the philosophical inquiries that laid the groundwork for modern thought.",
       "tags": [
-        "Archaic",
-        "Poetry",
-        "Epic",
-        "Mythology"
+        "french"
       ],
       "books": [
         {
-          "id": "homer-iliad",
-          "title": "The Iliad",
-          "author": "Homer",
-          "coverUrl": "https://imgs.search.brave.com/_kuoaBd4xW4RHoMYpHnzAfPzCmbKsbyxqZ3keJ5bE68/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jb3Zl/cnMuYXVkaW9ib29r/cy5jb20vaW1hZ2Vz/L2NvdmVycy9mdWxs/Lzk3ODAyNDE0NDA5/MjYuanBn"
+          "id": "MNE3axskG9IC",
+          "title": "Gargantua and Pantagruel",
+          "author": "François Rabelais",
+          "coverUrl": "http://books.google.com/books/content?id=MNE3axskG9IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         {
-          "id": "hesiod-theogony",
-          "title": "Theogony / Works and Days",
-          "author": "Hesiod",
-          "coverUrl": "https://covers.openlibrary.org/b/id/10042488-L.jpg"
+          "id": "8Uw5MdiHDr0C",
+          "title": "The Complete Essays",
+          "author": "Michel de Montaigne",
+          "coverUrl": "http://books.google.com/books/content?id=8Uw5MdiHDr0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         {
-          "id": "sappho-fragments",
-          "title": "If Not, Winter: Fragments of Sappho",
-          "author": "Sappho",
-          "coverUrl": "https://covers.openlibrary.org/b/id/10037837-L.jpg"
+          "id": "XSbtqdNpQt8C",
+          "title": "Discours de la méthode",
+          "author": "René Descartes",
+          "coverUrl": "http://books.google.com/books/content?id=XSbtqdNpQt8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "O_o9AAAAcAAJ",
+          "title": "Méditations métaphysiques",
+          "author": "René Descartes",
+          "coverUrl": "http://books.google.com/books/content?id=O_o9AAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "WZxEAAAAIAAJ",
+          "title": "Le Cid",
+          "author": "Pierre Corneille",
+          "coverUrl": "http://books.google.com/books/content?id=WZxEAAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "nDQoAQAAIAAJ",
+          "title": "Horace",
+          "author": "Pierre Corneille",
+          "coverUrl": "http://books.google.com/books/content?id=nDQoAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        {
+          "id": "bKcmk9bNZeAC",
+          "title": "The Misanthrope",
+          "author": "Molière",
+          "coverUrl": "http://books.google.com/books/content?id=bKcmk9bNZeAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "Vi0_AAAAYAAJ",
+          "title": "L'avare",
+          "author": "Molière",
+          "coverUrl": "http://books.google.com/books/content?id=Vi0_AAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "kA27zQEACAAJ",
+          "title": "Pensées",
+          "author": "Blaise Pascal",
+          "coverUrl": "http://books.google.com/books/content?id=kA27zQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        {
+          "id": "BNqz84RjaMUC",
+          "title": "The Princess of Cleves",
+          "author": "Madame de La Fayette",
+          "coverUrl": "http://books.google.com/books/content?id=BNqz84RjaMUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "oohPEAAAQBAJ",
+          "title": "Phèdre",
+          "author": "Jean Racine",
+          "coverUrl": "http://books.google.com/books/content?id=oohPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        {
+          "id": "sk8BAAAAYAAJ",
+          "title": "Andromaque",
+          "author": "Jean Racine",
+          "coverUrl": "http://books.google.com/books/content?id=sk8BAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         }
       ]
     },
     {
-      "id": "athenian-drama",
-      "title": "Athenian Drama: Tragedy & Comedy",
-      "description": "This course examines the golden age of Athenian theatre. It covers the political, social, and religious dimensions of tragedy through the works of Aeschylus, Sophocles, and Euripides, and the satirical, political commentary of Old Comedy with Aristophanes.",
+      "id": "course-2",
+      "title": "The Enlightenment and Its Discontents (18th Century)",
+      "description": "This course charts the intellectual and literary landscape of the Age of Enlightenment in France. It will explore the rise of the philosophes, their critiques of absolute monarchy and religious dogma, and their advocacy for reason, liberty, and individual rights. The period's fiction, theatre, and philosophical treatises will be examined as vehicles for these revolutionary ideas, as well as the counter-currents of sentiment and skepticism that complicated the Enlightenment project.\n\n",
       "tags": [
-        "Theatre",
-        "Tragedy",
-        "Comedy",
-        "Ancient"
+        "french"
       ],
       "books": [
         {
-          "id": "aeschylus-oresteia",
-          "title": "The Oresteia",
-          "author": "Aeschylus",
-          "coverUrl": "https://covers.openlibrary.org/b/id/8268481-L.jpg"
+          "id": "ueKGVv-hyEkC",
+          "title": "The Spirit of Laws",
+          "author": "Charles de Secondat baron de Montesquieu",
+          "coverUrl": "http://books.google.com/books/content?id=ueKGVv-hyEkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         {
-          "id": "sophocles-theban-plays",
-          "title": "The Theban Plays",
-          "author": "Sophocles",
-          "coverUrl": "https://covers.openlibrary.org/b/id/12658789-L.jpg"
+          "id": "-7GBEAAAQBAJ",
+          "title": "Persian Letters",
+          "author": "Montesquieu",
+          "coverUrl": "http://books.google.com/books/content?id=-7GBEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         {
-          "id": "euripides-bacchae",
-          "title": "The Bacchae",
-          "author": "Euripides",
-          "coverUrl": "https://covers.openlibrary.org/b/id/8020468-L.jpg"
+          "id": "pfHyDAAAQBAJ",
+          "title": "Candide ou l'optimisme",
+          "author": "Voltaire,",
+          "coverUrl": "http://books.google.com/books/content?id=pfHyDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         {
-          "id": "aristophanes-lysistrata",
-          "title": "Lysistrata",
-          "author": "Aristophanes",
-          "coverUrl": "https://covers.openlibrary.org/b/id/10039088-L.jpg"
+          "id": "Aw2nbNgafEYC",
+          "title": "Lettres philosophiques",
+          "author": "Jean-Jacques Rousseau",
+          "coverUrl": "http://books.google.com/books/content?id=Aw2nbNgafEYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "ixLAswEACAAJ",
+          "title": "Jacques Le Fataliste Et Son Maitre",
+          "author": "Denis Diderot",
+          "coverUrl": "http://books.google.com/books/content?id=ixLAswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        {
+          "id": "3gM7aKctXzYC",
+          "title": "Le Neveu de Rameau et autres textes",
+          "author": "Denis Diderot",
+          "coverUrl": "http://books.google.com/books/content?id=3gM7aKctXzYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "Na-REAAAQBAJ",
+          "title": "Du Contrat Social",
+          "author": "Jean-Jacques Rousseau",
+          "coverUrl": "http://books.google.com/books/content?id=Na-REAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "wmsgXRu8RDUC",
+          "title": "Les Confessions",
+          "author": "Rousseau",
+          "coverUrl": "http://books.google.com/books/content?id=wmsgXRu8RDUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "hwHuT85SmhIC",
+          "title": "Dangerous Acquaintances",
+          "author": "Choderlos de Laclos",
+          "coverUrl": "http://books.google.com/books/content?id=hwHuT85SmhIC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        {
+          "id": "gjbKZ1liw_oC",
+          "title": "De l'éducation des femmes",
+          "author": "Choderlos de Laclos, Pierre-Ambroise-François Choderlos de Laclos",
+          "coverUrl": "http://books.google.com/books/content?id=gjbKZ1liw_oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         }
       ]
     },
     {
-      "id": "early-philosophy",
-      "title": "Early Greek Philosophy & Thought",
-      "description": "Trace the origins of Western philosophy, from the cosmological inquiries of the Pre-Socratics to the systematic ethical and political frameworks of Plato and Aristotle. This course also includes the foundational texts of Western medicine.",
+      "id": "course-3",
+      "title": "The Age of the Novel and the Birth of Modernity (19th Century)",
+      "description": "The 19th century in France was a period of immense social and political upheaval, and the novel emerged as the preeminent genre for capturing its complexities. This course will trace the development of realism, romanticism, and naturalism, examining how authors sought to represent the full spectrum of human experience, from the heights of passion to the depths of social misery. We will also consider the era's key political and social thinkers who grappled with the consequences of revolution and industrialisation.",
       "tags": [
-        "Philosophy",
-        "Ancient",
-        "Ethics",
-        "Politics"
+        "french"
       ],
       "books": [
         {
-          "id": "presocratics-fragments",
-          "title": "The Presocratic Philosophers",
-          "author": "The Pre-Socratics",
-          "coverUrl": "https://covers.openlibrary.org/b/id/8254823-L.jpg"
+          "id": "1CDTEAAAQBAJ",
+          "title": "Le rouge et le noir",
+          "author": "Stendhal",
+          "coverUrl": "http://books.google.com/books/content?id=1CDTEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         {
-          "id": "platon-republic",
-          "title": "The Republic",
-          "author": "Platon (Plato)",
-          "coverUrl": "https://covers.openlibrary.org/b/id/8286109-L.jpg"
+          "id": "W2IGAQAAIAAJ",
+          "title": "La Chartreuse de Parme",
+          "author": "Stendhal",
+          "coverUrl": "http://books.google.com/books/content?id=W2IGAQAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         {
-          "id": "aristotle-politics",
-          "title": "Politics",
-          "author": "Aristotle",
-          "coverUrl": "https://covers.openlibrary.org/b/id/12839958-L.jpg"
+          "id": "A22uEAiOBJ0C",
+          "title": "Pere Goriot (Owc)",
+          "author": "Honoré de Balzac",
+          "coverUrl": "http://books.google.com/books/content?id=A22uEAiOBJ0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         {
-          "id": "hippocrates-writings",
-          "title": "The Hippocratic Writings",
-          "author": "Hippocrates",
-          "coverUrl": "https://covers.openlibrary.org/b/id/2493399-L.jpg"
+          "id": "4eq1oQEACAAJ",
+          "title": "Lost Illusions",
+          "author": "Honoré de Balzac",
+          "coverUrl": "http://books.google.com/books/content?id=4eq1oQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        {
+          "id": "2jSilr8Z5-oC",
+          "title": "Eugenie Grandet",
+          "author": "Honoré de Balzac",
+          "coverUrl": "http://books.google.com/books/content?id=2jSilr8Z5-oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "sUWwEAAAQBAJ",
+          "title": "La Mare au diable",
+          "author": "George Sand",
+          "coverUrl": "http://books.google.com/books/content?id=sUWwEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "DT2NzwEACAAJ",
+          "title": "Indiana",
+          "author": "George Sand",
+          "coverUrl": "http://books.google.com/books/content?id=DT2NzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        {
+          "id": "R57VeupVJkwC",
+          "title": "Les Misérables",
+          "author": "Victor Hugo",
+          "coverUrl": "http://books.google.com/books/content?id=R57VeupVJkwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "NpOjMrpFB-MC",
+          "title": "The Hunchback of Notre Dame",
+          "author": "Victor Hugo",
+          "coverUrl": "http://books.google.com/books/content?id=NpOjMrpFB-MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "RyEEAAAAQAAJ",
+          "title": "The Count of Monte-Cristo",
+          "author": "Alexandre Dumas",
+          "coverUrl": "http://books.google.com/books/content?id=RyEEAAAAQAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "KW0YAAAAYAAJ",
+          "title": "The Three Musketeers",
+          "author": "Alexandre Dumas",
+          "coverUrl": "http://books.google.com/books/content?id=KW0YAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "1ngaAAAAYAAJ",
+          "title": "De la démocratie en Amérique",
+          "author": "Alexis de Tocqueville",
+          "coverUrl": "http://books.google.com/books/content?id=1ngaAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "iAEuAAAAIAAJ",
+          "title": "The Old Regime and the Revolution",
+          "author": "Alexis de Tocqueville",
+          "coverUrl": "http://books.google.com/books/content?id=iAEuAAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "XXcRbS34jv4C",
+          "title": "Cours de Philosophie positive",
+          "author": "Auguste Comte",
+          "coverUrl": "http://books.google.com/books/content?id=XXcRbS34jv4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "VgQXqyPITLUC",
+          "title": "Introduction à l'étude de la médicine expérimentale",
+          "author": "Claude Bernard",
+          "coverUrl": "http://books.google.com/books/content?id=VgQXqyPITLUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "BbbtAAAAMAAJ",
+          "title": "Madame Bovary",
+          "author": "Gustave Flaubert",
+          "coverUrl": "http://books.google.com/books/content?id=BbbtAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        {
+          "id": "xhqlbQjgvpEC",
+          "title": "L'éducation sentimentale",
+          "author": "Gustave Flaubert",
+          "coverUrl": "http://books.google.com/books/content?id=xhqlbQjgvpEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "cuGiTgWEb70C",
+          "title": "Vingt mille lieues sous les mers",
+          "author": "Jules Verne",
+          "coverUrl": "http://books.google.com/books/content?id=cuGiTgWEb70C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "2wYTCwAAQBAJ",
+          "title": "Le tour du Monde en 80 jours",
+          "author": "Jules Verne",
+          "coverUrl": "http://books.google.com/books/content?id=2wYTCwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        {
+          "id": "6mn9tAVZ7-IC",
+          "title": "Germinal",
+          "author": "Émile Zola",
+          "coverUrl": "http://books.google.com/books/content?id=6mn9tAVZ7-IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "a0pDEAAAQBAJ",
+          "title": "The Assommoir",
+          "author": "Émile Zola, Robert Lethbridge",
+          "coverUrl": "http://books.google.com/books/content?id=a0pDEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "Dl4t2UHsgb0C",
+          "title": "A Parisian Affair and Other Stories",
+          "author": "Guy de Maupassant",
+          "coverUrl": "http://books.google.com/books/content?id=Dl4t2UHsgb0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         }
       ]
     },
     {
-      "id": "greek-historians",
-      "title": "The Greek Historians",
-      "description": "An analysis of the birth of historiography. This course contrasts the ethnographic and narrative style of Herodotus with the rigorous, political analysis of Thucydides' account of the Peloponnesian War, alongside later historical and biographical works by Xenophon and Plutarch.",
+      "id": "course-4",
+      "title": "Revolutionizing Form and Thought (Late 19th & Early 20th Centuries)",
+      "description": "This course focuses on the radical innovations in poetry, prose, and philosophy that marked the transition into the 20th century. It will explore the Symbolist movement's challenge to realism, the \"poètes maudits\" and their explorations of modern alienation, and the philosophical inquiries into time, memory, and consciousness that reshaped understandings of the self. This era witnessed a profound break with traditional forms and a questioning of the very nature of representation.",
       "tags": [
-        "History",
-        "Ancient",
-        "Politics",
-        "Biography"
+        "french"
       ],
       "books": [
         {
-          "id": "herodotus-histories",
-          "title": "The Histories",
-          "author": "Herodotus",
-          "coverUrl": "https://covers.openlibrary.org/b/id/10041113-L.jpg"
+          "id": "iwBlCgAAQBAJ",
+          "title": "The Flowers of Evil",
+          "author": "Charles Baudelaire",
+          "coverUrl": "http://books.google.com/books/content?id=iwBlCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         {
-          "id": "thucydides-peloponnesian-war",
-          "title": "History of the Peloponnesian War",
-          "author": "Thucydides",
-          "coverUrl": "https://covers.openlibrary.org/b/id/8293976-L.jpg"
+          "id": "O1LN94MBV74C",
+          "title": "The Parisian Prowler",
+          "author": "Charles Baudelaire",
+          "coverUrl": "http://books.google.com/books/content?id=O1LN94MBV74C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         {
-          "id": "xenophon-anabasis",
-          "title": "The Anabasis",
-          "author": "Xenophon",
-          "coverUrl": "https://covers.openlibrary.org/b/id/10038933-L.jpg"
+          "id": "6sP5rFNqqsQC",
+          "title": "Collected Poems",
+          "author": "Stéphane Mallarmé",
+          "coverUrl": "http://books.google.com/books/content?id=6sP5rFNqqsQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         {
-          "id": "plutarch-lives",
-          "title": "Parallel Lives",
-          "author": "Plutarch",
-          "coverUrl": "https://covers.openlibrary.org/b/id/10042436-L.jpg"
+          "id": "cEM-AQAAMAAJ",
+          "title": "Romances sans paroles ...",
+          "author": "Paul Verlaine",
+          "coverUrl": "http://books.google.com/books/content?id=cEM-AQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "DfbBV81bQf0C",
+          "title": "Illuminations, and Other Prose Poems",
+          "author": "Arthur Rimbaud",
+          "coverUrl": "http://books.google.com/books/content?id=DfbBV81bQf0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "YoFMrgEACAAJ",
+          "title": "Creative Evolution",
+          "author": "Henri Bergson",
+          "coverUrl": "http://books.google.com/books/content?id=YoFMrgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        {
+          "id": "TVvoRX9IblIC",
+          "title": "Collected Stories of Colette",
+          "author": "Colette",
+          "coverUrl": "http://books.google.com/books/content?id=TVvoRX9IblIC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        {
+          "id": "lvmFDwAAQBAJ",
+          "title": "The Immoralist",
+          "author": "André Gide, Stanley Appelbaum",
+          "coverUrl": "http://books.google.com/books/content?id=lvmFDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "ui4HEQAAQBAJ",
+          "title": "The Counterfeiters - Gide",
+          "author": "André Gide",
+          "coverUrl": "http://books.google.com/books/content?id=ui4HEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "3jA30TUVJqwC",
+          "title": "À la recherche du temps perdu ...",
+          "author": "Marcel Proust",
+          "coverUrl": "http://books.google.com/books/content?id=3jA30TUVJqwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "YqmfAAAAMAAJ",
+          "title": "Art et scolastique",
+          "author": "Jacques Maritain",
+          "coverUrl": "http://books.google.com/books/content?id=YqmfAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
         }
       ]
     },
     {
-      "id": "hellenistic-thought",
-      "title": "Hellenistic Thought & Science",
-      "description": "Explore the intellectual world after Alexander the Great. This course covers the shift towards personal ethics in the philosophies of Epicurus and the Stoics (Epictetus, Marcus Aurelius), the birth of formal geometry with Euclid, and the great scientific minds of the Hellenistic period.",
+      "id": "course-5",
+      "title": " Existentialism and the Post-War Era (Mid-20th Century)",
+      "description": "The seismic events of the Second World War profoundly impacted French intellectual life, giving rise to existentialism and new forms of literary and theatrical expression. This course will examine the major figures of this period as they grappled with questions of freedom, responsibility, absurdity, and the human condition in a world stripped of traditional certainties. It will also explore the development of the \"Nouveau Roman\" (New Novel) and the Theatre of the Absurd.\n\n",
       "tags": [
-        "Hellenistic",
-        "Philosophy",
-        "Science",
-        "Math"
+        "french"
       ],
       "books": [
         {
-          "id": "epicurus-letters",
-          "title": "The Art of Happiness",
-          "author": "Epicurus",
-          "coverUrl": "https://covers.openlibrary.org/b/id/8287515-L.jpg"
+          "id": "AikmAQAAMAAJ",
+          "title": "Voyage Au Bout de la Nuit",
+          "author": "Louis-Ferdinand Céline",
+          "coverUrl": "http://books.google.com/books/content?id=AikmAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
         },
         {
-          "id": "epictetus-discourses",
-          "title": "Discourses and Selected Writings",
-          "author": "Epictetus",
-          "coverUrl": "https://covers.openlibrary.org/b/id/10309978-L.jpg"
+          "id": "r_hiQgAACAAJ",
+          "title": "Death on Credit",
+          "author": "Louis-Ferdinand Céline",
+          "coverUrl": "http://books.google.com/books/content?id=r_hiQgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
         },
         {
-          "id": "marcus-aurelius-meditations",
-          "title": "Meditations",
-          "author": "Marcus Aurelius",
-          "coverUrl": "https://covers.openlibrary.org/b/id/10042875-L.jpg"
+          "id": "gDVAEAAAQBAJ",
+          "title": "The Little Prince",
+          "author": "Antoine de Saint−Exupery",
+          "coverUrl": "http://books.google.com/books/content?id=gDVAEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         {
-          "id": "euclid-elements",
-          "title": "Euclid's Elements",
-          "author": "Euclid",
-          "coverUrl": "https://covers.openlibrary.org/b/id/8254642-L.jpg"
+          "id": "i01JYzVx93UC",
+          "title": "Phenomenology of Perception",
+          "author": "Maurice Merleau-Ponty",
+          "coverUrl": "http://books.google.com/books/content?id=i01JYzVx93UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "Q3AxAQAAIAAJ",
+          "title": "L'oeil et l'esprit",
+          "author": "Maurice Merleau-Ponty",
+          "coverUrl": "http://books.google.com/books/content?id=Q3AxAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        {
+          "id": "mxH354gAqQMC",
+          "title": "Nausea",
+          "author": "Jean-Paul Sartre",
+          "coverUrl": "http://books.google.com/books/content?id=mxH354gAqQMC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        {
+          "id": "osUtAAAAYAAJ",
+          "title": "L'Être et le néant",
+          "author": "Jean-Paul Sartre",
+          "coverUrl": "http://books.google.com/books/content?id=osUtAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        {
+          "id": "hPv5r4hcM3EC",
+          "title": "The Second Sex",
+          "author": "Simone de Beauvoir",
+          "coverUrl": "http://books.google.com/books/content?id=hPv5r4hcM3EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "zP9mvVBrc-wC",
+          "title": "En Attendant Godot",
+          "author": "Samuel Beckett",
+          "coverUrl": "http://books.google.com/books/content?id=zP9mvVBrc-wC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        {
+          "id": "th8pAQAAIAAJ",
+          "title": "La cantatrice chauve",
+          "author": "Eugène Ionesco",
+          "coverUrl": "http://books.google.com/books/content?id=th8pAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        {
+          "id": "Df290AEACAAJ",
+          "title": "The Stranger",
+          "author": "Albert Camus",
+          "coverUrl": "http://books.google.com/books/content?id=Df290AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        {
+          "id": "Oui_0AEACAAJ",
+          "title": "The Myth of Sisyphus",
+          "author": "Albert Camus",
+          "coverUrl": "http://books.google.com/books/content?id=Oui_0AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
         }
       ]
     },
     {
-      "id": "hellenistic-science-math",
-      "title": "Hellenistic Science & Mathematics",
-      "description": "A survey of the major scientific and mathematical achievements from Archimedes to Ptolemy. This course examines the development of geometry, astronomy, mechanics, and medicine in the ancient world, including later commentators like Lucian and Plotinus.",
+      "id": "course-6",
+      "title": "From Structuralism to Contemporary Voices (Late 20th & 21st Centuries)",
+      "description": "This course navigates the complex and diverse literary and philosophical landscape of France from the post-structuralist revolution to the present day. It will explore the deconstruction of language and meaning, the rise of autofiction, and the engagement with memory, trauma, and identity in the works of recent Nobel laureates and other leading contemporary authors. This section highlights the ongoing evolution and dynamism of French thought and literature.",
       "tags": [
-        "Hellenistic",
-        "Science",
-        "Math",
-        "Roman"
+        "french"
       ],
       "books": [
         {
-          "id": "archimedes-works",
-          "title": "The Works of Archimedes",
-          "author": "Archimedes",
-          "coverUrl": "https://covers.openlibrary.org/b/id/8017408-L.jpg"
+          "id": "v16JPwAACAAJ",
+          "title": "Moderato Cantabile",
+          "author": "Marguerite Duras",
+          "coverUrl": "http://books.google.com/books/content?id=v16JPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
         },
         {
-          "id": "apollonius-conics",
-          "title": "Conics",
-          "author": "Apollonius of Perga",
-          "coverUrl": "https://covers.openlibrary.org/b/id/788874-L.jpg"
+          "id": "dU2nn2vKk6QC",
+          "title": "The Lover",
+          "author": "Marguerite Duras",
+          "coverUrl": "http://books.google.com/books/content?id=dU2nn2vKk6QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         {
-          "id": "ptolemy-almagest",
-          "title": "The Almagest",
-          "author": "Ptolemy",
-          "coverUrl": "https://covers.openlibrary.org/b/id/101735-L.jpg"
+          "id": "6rfP0H5TSmYC",
+          "title": "Discipline and Punish",
+          "author": "Michel Foucault",
+          "coverUrl": "http://books.google.com/books/content?id=6rfP0H5TSmYC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
         },
         {
-          "id": "galen-natural-faculties",
-          "title": "On the Natural Faculties",
-          "author": "Galen",
-          "coverUrl": "https://covers.openlibrary.org/b/id/8048128-L.jpg"
-        }
-      ]
-    },
-    {
-      "id": "roman-era-thinkers",
-      "title": "Roman Era Thinkers",
-      "description": "A look into the intellectual life during the Roman Empire, featuring the satirical dialogues of Lucian, the Neoplatonic philosophy of Plotinus, and the mathematical work of Nicomachus of Gerasa.",
-      "tags": [
-        "Roman",
-        "Philosophy",
-        "Satire",
-        "Math"
-      ],
-      "books": [
-        {
-          "id": "lucian-dialogues",
-          "title": "Selected Dialogues",
-          "author": "Lucian",
-          "coverUrl": "https://covers.openlibrary.org/b/id/10173693-L.jpg"
+          "id": "Zv3iAwAAQBAJ",
+          "title": "L'archéologie du savoir",
+          "author": "Michel Foucault",
+          "coverUrl": "http://books.google.com/books/content?id=Zv3iAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         {
-          "id": "plotinus-enneads",
-          "title": "The Enneads",
-          "author": "Plotinus",
-          "coverUrl": "https://covers.openlibrary.org/b/id/10037813-L.jpg"
+          "id": "iagJAgAAQBAJ",
+          "title": "Of Grammatology",
+          "author": "Jacques Derrida",
+          "coverUrl": "http://books.google.com/books/content?id=iagJAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         {
-          "id": "plutarch-essays",
-          "title": "Essays",
-          "author": "Plutarch",
-          "coverUrl": "https://covers.openlibrary.org/b/id/10042436-L.jpg"
+          "id": "ecsw9gDP0jcC",
+          "title": "Derrida and Husserl",
+          "author": "Leonard Lawlor",
+          "coverUrl": "http://books.google.com/books/content?id=ecsw9gDP0jcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "yU4fS8zh-WQC",
+          "title": "The Interrogation",
+          "author": "J. M. G. Le Clezio",
+          "coverUrl": "http://books.google.com/books/content?id=yU4fS8zh-WQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "QtuFDwAAQBAJ",
+          "title": "Missing Person",
+          "author": "Patrick Modiano",
+          "coverUrl": "http://books.google.com/books/content?id=QtuFDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "v_EtDwAAQBAJ",
+          "title": "The Years",
+          "author": "Annie Ernaux",
+          "coverUrl": "http://books.google.com/books/content?id=v_EtDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        {
+          "id": "6HD8If3kJuYC",
+          "title": "A Man's Place",
+          "author": "Annie Ernaux",
+          "coverUrl": "http://books.google.com/books/content?id=6HD8If3kJuYC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
         }
       ]
     }
